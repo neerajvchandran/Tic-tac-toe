@@ -11,7 +11,6 @@ void markBoard(char mark);
 int main(){
 
   int gameStatus;
-  int i;
   char mark;
 
   player = 1;
