@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<windows.h>
 
 char square[10] = {'0','1','2','3','4','5','6','7','8','9'};
 int choice,player;
@@ -23,7 +24,7 @@ int main(){
 
     if (choice < 1 || choice > 9 || square[choice] != (choice + '0')) {
       printf("INVALID MOVE! Please try again.\nYou will return to the board in 3 seconds.");
-      sleep(3);
+      Sleep(3);
       continue; 
     }
 
